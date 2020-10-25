@@ -1,0 +1,1103 @@
+/* General */
+
+body {
+  overflow-x: hidden;
+  color: #444444;
+}
+
+a {
+  color: #fd680e;
+}
+
+a:hover {
+  color: #ff8f4c;
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,
+.font-primary {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Header */
+
+#header {
+  height: 80px;
+  padding: 20px 0;
+  z-index: 10;
+  position: relative;
+}
+
+#header .logo h1 {
+  font-size: 36px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+@media (max-width: 768px) {
+  #header .logo h1 {
+    font-size: 28px;
+    padding: 8px 0;
+  }
+}
+
+/* Navigation Menu */
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  right: -260px;
+  width: 260px;
+  padding-top: 18px;
+  background: rgba(34, 34, 34, 0.8);
+  transition: 0.4s;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: #ffd2b7;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
+  color: #ffa26a;
+  text-decoration: none;
+}
+
+.nav-menu .drop-down>a:after {
+  content: "\e9f8";
+  font-family: "boxicons";
+  padding-left: 10px;
+  position: absolute;
+  right: 15px;
+}
+
+.nav-menu .active.drop-down>a:after {
+  content: "\e9f8";
+}
+
+.nav-menu .drop-down>a {
+  padding-right: 35px;
+}
+
+.nav-menu .drop-down ul {
+  display: none;
+  overflow: hidden;
+}
+
+.nav-menu .drop-down li {
+  padding-left: 20px;
+}
+
+.nav-menu-active {
+  right: 0;
+}
+
+.nav-toggle {
+  position: fixed;
+  right: 25px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: rgba(34, 34, 34, 0.5);
+  transition: all 0.4s;
+  outline: none;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+  padding: 10px 12px;
+  border-radius: 2px;
+}
+
+.nav-toggle i {
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav-toggle-active {
+  right: 275px;
+}
+
+@font-face {
+  font-family: 'A-OTF A1 Mincho Std';
+  src: url('../../fonts/A-OTF-A1明朝Std-Bold.otf');
+}
+
+/* Hero Section */
+
+#hero {
+  width: auto;
+  height: 120vh;
+  background: url("../images/bg_plane.jpg") center;
+  background-size: cover;
+  position: relative;
+  margin-top: -80px;
+  z-index: 9;
+}
+
+#hero h1 {
+  font-size: 80px;
+  font-family: "A-OTF A1 Mincho Std";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    background-attachment: auto;
+  }
+  #hero h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    background-attachment: auto;
+  }
+
+  #hero h1 {
+    font-size: 40px;
+  }
+}
+
+/* TECHNICAL */
+
+.technical {
+  margin-top: 120px;
+}
+
+.technical-box-1 {
+  border-radius: 12px;
+  margin-top: -200px;
+  background-color: white;
+  padding: 30px;
+}
+
+.technical-box-2 {
+  background-color: white;
+}
+
+.technical-box-2-cover {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.technical-text-1 {
+  font-size: 64px;
+  font-family: "CrimsonText";
+  color: rgb(1, 62, 141);
+  line-height: 0.547;
+}
+
+.technical-text-2 {
+  font-size: 20px;
+  font-family: 'Yu Gothic';
+  line-height: 4.5;
+  text-align: center;
+  color: rgb(102, 102, 102);
+  font-size: 15px;
+}
+
+.technical-text-3 {
+  font-size: 20px;
+  font-family: 'Yu Gothic';
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+}
+
+.project-box {
+  position: relative;
+  text-align: center;
+}
+
+.project-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-text-file {
+  font-family: "CrimsonText";
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.15em;
+  color: rgb(255, 255, 255);
+}
+
+.project-text-number {
+  font-family: "CrimsonText";
+  font-size: 64px;
+  color: rgb(255, 255, 255);
+  margin-top: -37px;
+}
+
+.project-text-line {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 15%;
+  margin-top: -12px;
+  margin-bottom: 20px;
+}
+
+.project-text-subtitle {
+  font-size: 24px;
+  font-family: 'Yu Gothic';
+  color: rgb(255, 255, 255);
+  line-height: 1.25;
+  font-style: medium;
+  
+}
+
+.project-layer {
+  background-color: rgb(1, 62, 141, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .technical-text-1 {
+    font-size: 56px;
+  }
+  .technical-text-3 {
+    font-size: 15px;
+  }
+  .project-text-file {
+    font-size: 15px;
+  }
+  .project-text-number {
+    font-size: 36px;
+    margin-top: -30px;
+  }
+  .project-text-line {
+    margin-top: -4px;
+  }
+  .project-text-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .technical-text-1 {
+    font-size: 50px;
+  }
+  .technical-text-3 {
+    font-size: 13px;
+  }
+  .project-text-file {
+    font-size: 9px;
+  }
+  .project-text-number {
+    font-size: 32px;
+    margin-top: -20px;
+  }
+  .project-text-line {
+    margin-top: 0px;
+  }
+  .project-text-subtitle {
+    font-size: 12px;
+  }
+}
+
+/* 100年企業をめざして */
+
+.year100 {
+  position: relative;
+}
+
+.year100content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.year100title {
+  font-size: 60px;
+  font-family: "A-OTF A1 Mincho Std";
+  letter-spacing: 0.07em;
+}
+
+.year100subtitle {
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+}
+
+.year100desc {
+  font-family: 'Yu Gothic', serif;
+  font-size: 10pt;
+  letter-spacing: 0.12em;
+  outline: none;
+}
+
+.year100desc hr {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin-left: 0px;
+}
+
+.year100desc a {
+  font-size: 16px;
+  font-family: "Yu Gothic";
+  color: white;
+  line-height: 1.875;
+  text-align: left;
+  text-decoration: none;
+}
+
+@-webkit-keyframes animate-loading-notify {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading-notify {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .year100title {
+    font-size: 45px;
+  }
+  .year100subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .year100title {
+    font-size: 30px;
+  }
+  .year100subtitle {
+    font-size: 14px;
+  }
+}
+
+/* PROJECT STORY */
+
+.project-story {
+  height: 600px;
+  position: relative;
+}
+
+.project-story-grey {
+  width: 930px;
+  height: 330px;
+  background-color: rgb(229, 229, 229);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0px;
+}
+
+.project-story-row {
+  padding-top: 55px;
+}
+
+.project-story-row img {
+  height: 403px;
+}
+
+.project-story-title {
+  font-size: 80px;
+  font-family: "CrimsonText";
+  color: rgb(1, 62, 141);
+  position: absolute;
+  margin-right: 90px;
+  left: 950px;
+  margin-top: -20px;
+}
+
+.project-story-text1 {
+  margin: 95px 0 0 -3px;
+}
+
+.project-story-text2 {
+  margin: -50px 0 0 -3px;
+}
+
+.project-story-bluebox {
+  position: absolute;
+  width: 550px;
+  left: 69%;
+  bottom: -20px;
+  transform: translate(-50%, 0);
+  font-family: 'Yu Gothic';
+  font-size: 16px;
+  line-height: 2.188;
+}
+
+.project-story-bluebox .row {
+  background-color: rgb(0, 37, 84);
+  height: 80px;
+}
+
+.project-story-bluebox .row p {
+  margin: 22px 0 0 30px;
+}
+
+.project-story-bluebox .row a {
+  margin: 22px 0 0 140px;
+  color: white;
+}
+
+.project-story-bluebox .row img {
+  position: absolute;
+  right: 40px;
+  margin-top: 1%;
+}
+
+@media (max-width: 1024px) {
+  .project-story {
+    height: 600px;
+  }
+
+  .project-story-grey {
+    width: 930px;
+    height: 330px;
+    bottom: 66px;
+  }
+
+  .project-story-row img {
+    height: 403px;
+  }
+
+  .project-story-title {
+    font-size: 57pt;
+    margin-top: -15px;
+  }
+
+  .project-story-bluebox {
+    width: 550px;
+    bottom: 40px;
+    font-size: 14.5px;
+  }
+
+  .project-story-bluebox .row a {
+    margin: 22px 0 0 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-story {
+    height: 430px;
+  }
+
+  .project-story-grey {
+    width: 563px;
+    height: 200px;
+    bottom: 80px;
+  }
+
+  .project-story-row img {
+    height: 230px;
+  }
+
+  .project-story-title {
+    font-size: 38pt;
+    margin-top: -55px;
+  }
+
+  .project-story-bluebox {
+    width: 400px;
+    bottom: 45px;
+    font-size: 11.5px;
+  }
+
+  .project-story-bluebox .row a {
+    margin: 22px 0 0 50px;
+  }
+}
+
+/* WORKSTYLE */
+
+.work-style {
+  height: 600px;
+  position: relative;
+}
+
+.work-style-grey {
+  width: 930px;
+  height: 330px;
+  background-color: rgb(229, 229, 229);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0px;
+}
+
+.work-style-row {
+  padding-top: 55px;
+  right: 47ch;
+  position: absolute;
+}
+
+.work-style-row img {
+  height: 403px;
+}
+
+.work-style-title {
+  font-size: 80px;
+  font-family: "CrimsonText";
+  color: rgb(1, 62, 141);
+  margin-right: 90px;
+  left: 180px;
+  margin-top: -20px;
+}
+
+.work-style-text1 {
+  margin: 110px 0 0 -3px;
+}
+
+.work-style-text2 {
+  margin: -50px 0 0 -3px;
+}
+
+.work-style-bluebox { 
+  position: absolute;
+  width: 555px;
+  left: 30%;
+  bottom: 110px;
+  transform: translate(-50%, 0);
+  font-family: Yu Gothic;
+  font-size: 14.5px;
+  line-height: 2.188;
+}
+
+.work-style-bluebox .row {
+  background-color: rgb(0, 37, 84);
+  height: 80px;
+  width: 680px;
+  position: absolute;
+}
+
+.work-style-bluebox .row p {
+  margin: 22px 0 0 30px;
+}
+
+.work-style-bluebox .row a {
+  margin: 22px 0 0 200px;
+  color: white;
+}
+
+.work-style-bluebox .row img {
+  position: absolute;
+  left: 600px;
+  margin-top: 1%;
+}
+
+@media (max-width: 1024px) {
+  .work-style {
+    height: 600px;
+  }
+
+  .work-style-grey {
+    width: 930px;
+    height: 330px;
+    bottom: 66px;
+  }
+
+  .work-style-row img {
+    height: 403px;
+  }
+
+  .work-style-title {
+    font-size: 57pt;
+    margin-top: -15px;
+    margin-right: 90px;
+  }
+
+  .work-style-bluebox {
+    width: 555px;
+    right: 31%;
+    bottom: 145px;
+    font-size: 14.5px;
+  }
+
+  .work-style-bluebox .row {
+    height: 65px;
+  }
+
+  .work-style-bluebox .row p {
+    margin: 22px 0 0 30px;
+  }
+
+  .work-style-bluebox .row a {
+    margin: 22px 0 0 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-style {
+    height: 300px;
+  }
+
+  .work-style-grey {
+    width: 560px;
+    height: 170px;
+    bottom: 20px;
+  }
+
+  .work-style-row img {
+    margin-top: -40px;
+    height: 220px;
+  }
+
+  .work-style-title {
+    font-size: 38pt;
+    margin-top: -100px;
+    margin-right: 45px;
+  }
+
+  .work-style-bluebox {
+    width: 320px;
+    right: 32%;
+    bottom: 35px;
+    font-size: 12.5px;
+  }
+
+  .work-style-bluebox .row {
+    height: 55px;
+  }
+
+  .work-style-bluebox .row p {
+    margin: 20px 0 0 15px;
+  }
+
+  .work-style-bluebox .row a {
+    margin: 18px 0 0 15px;
+  }
+}
+
+/* INTERVIEW */
+
+.interview-text1 {
+  font-size: 57pt;
+  font-family: 'Crimson Text';
+  color: #013e8d;
+}
+.interview-text2 {
+  font-size: 20px;
+  font-family: 'Yu Gothic';
+}
+
+.interview-text3 {
+  font-size: 16pt;
+  font-weight: bold;
+  font-family: 'Yu Gothic';
+}
+
+.interview-text4 {
+  font-size: 16px;
+  font-family: 'Yu Gothic';
+}
+
+.interview-img {
+  margin-top: initial;
+  width: 447px;
+}
+
+.interview-img-caption {
+  margin: 3px 30px 0 0;
+  font-weight: bold;
+  font-family: 'Yu Gothic';
+  font-size: 15px;
+  color: #666666;
+  text-align: right;
+}
+.interview-col-control {
+  margin: -117px 0 0 450px;
+}
+
+.interview-carousel-control {
+  background-color: #013e8d;
+  width: 40px;
+  height: 40px;
+}
+
+.interview-whitebox-1 {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  margin-right: -40px;
+  height: 100px;
+}
+
+.interview-whitebox-2 {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  margin: 0 37px 0 30px;
+  left: 40px;
+  height: 100px
+}
+
+@media (max-width: 1024px) {
+  .interview-text1 {
+    margin-top: 5px;
+    font-size: 38pt;
+  }
+
+  .interview-text2 {
+    font-size: 20px;
+  }
+
+  .interview-text3 {
+    font-size: 12pt;
+  }
+
+  .interview-text4 {
+    font-size: 16px;
+  }
+
+  .interview-img {
+    margin-top: initial;
+    width: 300px;
+  }
+
+  .interview-img-caption {
+    margin: 3px 30px 0 0;
+  }
+
+  .interview-col-control {
+    margin: -117px 0 0 450px;
+  }
+  .interview-carousel-control {
+    background-color: #013e8d;
+    width: 40px;
+    height: 40px;
+  }
+
+  .interview-whitebox-1 {
+    font-size: 16px;
+    background-color: white;
+    margin-right: -40px;
+    height: 100px;
+  }
+  .interview-whitebox-2 {
+    font-size: 16px;
+    margin: 0 37px 0 30px;
+    left: 40px;
+    height: 100px
+  }
+
+  .interview-whitebox-1 .row {
+    margin: 40px 0 0 20px;
+  }
+
+  .interview-whitebox-2 .row {
+    margin: 40px 0 0 10px;
+  }
+
+  .interview-whitebox-1 .row .col svg,
+  .interview-whitebox-2 .row .col svg {
+    height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .interview {
+    margin-bottom: 20px;
+  }
+
+  .interview-text1 {
+    margin-top: 30px;
+    font-size: 27pt;
+  }
+  .interview-text2 {
+    font-size: 20px;
+  }
+
+  .interview-text3 {
+    font-size: 9pt;
+  }
+  .interview-text4 {
+    font-size: 14px;
+  }
+
+  .interview-img {
+    margin-top: 130px;
+    width: 200px;
+  }
+
+  .interview-img-caption {
+    margin: 3px 10px 0 0;
+  }
+
+  .interview-col-control {
+    margin: -117px 0 0 175px;
+  }
+
+  .interview-whitebox-1,
+  .interview-whitebox-2 {
+    font-size: 10px;
+    height: 80px;
+  }
+
+  .interview-whitebox-1 .row {
+    margin: 30px 0 0 10px;
+  }
+
+  .interview-whitebox-2 .row {
+    margin: 30px 0 0 5px;
+  }
+
+  .interview-whitebox-1 .row .col svg,
+  .interview-whitebox-2 .row .col svg {
+    margin-top: -30px;
+    margin-left: 110px;
+    height: 8px;
+  }
+}
+
+
+/* BLOG */
+
+#blog .title h1 {
+  font-size: 64px;
+  font-family: "CrimsonText";
+  color: rgb(1, 62, 141);
+  text-align: center;
+}
+
+#blog .title p {
+  font-size: 20px;
+  font-family: "Yu Gothic";
+  color: rgb(102, 102, 102);
+  text-align: center;
+  line-height: 1.75;
+}
+
+#blog .row {
+  font-size: 14px;
+  font-family: "Yu Gothic";
+  color: rgb(153, 153, 153);
+  font-weight: bold;
+  line-height: 2.5;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+#blog .row a {
+  font-size: 14px;
+  font-family: "Yu Gothic";
+  color: rgb(1, 62, 141);
+  font-weight: bold;
+  line-height: 2.5;
+  text-align: left;
+}
+
+/* RECRUIT */
+
+#recruit .title h1 {
+  font-size: 64px;
+  font-family: "CrimsonText";
+  color: rgb(1, 62, 141);
+  text-align: center;
+}
+
+#recruit .title p {
+  font-size: 20px;
+  font-family: "Yu Gothic";
+  color: rgb(102, 102, 102);
+  line-height: 1.75;
+  text-align: center;
+}
+
+#recruit .header {
+  background-color: rgb(1, 62, 141);
+  height: 5px;
+}
+
+#recruit .card img {
+  width: auto;
+  height: auto;
+  padding-top: 10%
+
+}
+
+#recruit .card h5 {
+  font-size: 20px;
+  font-family: "Yu Gothic";
+  color: rgb(102, 102, 102);
+  line-height: 1.75;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Sections General */
+
+section {
+  padding: 80px 0;
+}
+
+.section-bg {
+  background-color:white;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 1px;
+  background: #fd680e;
+  bottom: 0;
+  left: calc(50% - 40px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+  font-style: italic;
+  color: #666666;
+}
+
+/* BLOG */
+
+@media (max-width: 1024px) {
+  #blog .title h1 {
+    font-size: 55px;
+  }
+
+  #blog .title p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #blog .title h1 {
+    font-size: 45px;
+  }
+
+  #blog .title p {
+    font-size: 15px;
+  }
+}
+
+/* RECRUIT */
+
+@media (max-width: 1024px) {
+  #recruit .title h1 {
+    font-size: 55px;
+  }
+  #recruit .title p {
+    font-size: 18px;
+  }
+  #recruit .card-body h5 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #recruit .title h1 {
+    font-size: 45px;
+  }
+  #recruit .title p {
+    font-size: 15px;
+  }
+  #recruit .card-body h5 {
+    font-size: 15px;
+  }
+}
+
+/* ENTRY BUTTON */
+#recruit .row button {
+  background-color: rgb(1, 62, 141);
+  font-size: 24px;
+  width: 360px;
+  height: 80px;
+}
+
+@media (max-width: 1024px) {
+  #recruit .row button {
+    font-size: 20px;
+    width: 288px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  #recruit .row button {
+    font-size: 17px;
+    width: 225px;
+    height: 50px;
+  }
+}
